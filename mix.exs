@@ -38,7 +38,6 @@ defmodule OrderInvariantCompare.Mixfile do
 
   defp package() do
     [
-      name: "OrderInvariantCompare",
       files: ["lib", "mix.exs", "README.md", "LICENSE.md"],
       maintainers: ["Mathew Bramson"],
       licenses: ["MIT"],
