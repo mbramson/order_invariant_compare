@@ -25,6 +25,7 @@ defmodule OrderInvariantCompare do
       iex> [1, 2, 3] <~> [3, 2, 1]
       true
   """
+  @spec (term <~> term) :: boolean
   def left <~> right when is_list(left) and is_list(right) do
     equal?(left, right)
   end
@@ -44,6 +45,7 @@ defmodule OrderInvariantCompare do
 
   This function is identical to the `<~>/2` function.
   """
+  @spec equal?(term, term) :: boolean
   def equal?(first, second) when is_list(first) and is_list(second) do
     Enum.sort(first) == Enum.sort(second)
   end
