@@ -15,4 +15,11 @@ defmodule OrderInvariantCompare do
   def left <~> right do
     left == right
   end
+
+  def equal?(left, right) when is_list(left) and is_list(right) do
+    Enum.sort(left) == Enum.sort(right)
+  end
+  def equal?(left, right) do
+    left == right
+  end
 end
