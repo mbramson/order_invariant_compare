@@ -1,7 +1,7 @@
 defmodule OrderInvariantCompareTest do
   use ExUnit.Case
   use Quixir
-  doctest OrderInvariantCompare
+  doctest OrderInvariantCompare, import: true
 
   import OrderInvariantCompare
 
