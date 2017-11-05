@@ -1,6 +1,7 @@
 # OrderInvariantCompare
 
-**TODO: Add description**
+OrderInvariantCompare provides functionality for order invariant equality
+comparison.
 
 ## Installation
 
@@ -10,7 +11,7 @@ by adding `order_invariant_compare` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:order_invariant_compare, "~> 0.1.0"}
+    {:order_invariant_compare, "~> 1.0.0"}
   ]
 end
 ```
